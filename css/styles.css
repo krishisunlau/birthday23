@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffd6e8, #ffeef5, #f9d6ff);
+  color: #7a2c52;
+}
+
+.container,
+.letter-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #b03060;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #8a4061;
+}
+
+.envelope-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.envelope-card {
+  background: rgba(255, 255, 255, 0.75);
+  border: 2px solid #ffc2da;
+  border-radius: 25px;
+  padding: 30px 20px;
+  text-decoration: none;
+  color: #7a2c52;
+  box-shadow: 0 8px 20px rgba(176, 48, 96, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  backdrop-filter: blur(6px);
+}
+
+.envelope-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 14px 28px rgba(176, 48, 96, 0.18);
+}
+
+.envelope-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.envelope-card h2 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.envelope-card p {
+  font-size: 0.95rem;
+  color: #95506f;
+}
+
+.letter-box {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 40px 30px;
+  border-radius: 28px;
+  border: 2px solid #ffc2da;
+  box-shadow: 0 10px 30px rgba(176, 48, 96, 0.14);
+  text-align: left;
+}
+
+.letter-box h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.letter-box p {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  color: #7a2c52;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  background: #ff7eb3;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.back-btn:hover {
+  background: #e85d98;
+  transform: scale(1.04);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .letter-box {
+    padding: 28px 20px;
+  }
+
+  .envelope-card {
+    padding: 24px 18px;
+  }
+}
